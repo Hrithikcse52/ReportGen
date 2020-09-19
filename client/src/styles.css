@@ -1,0 +1,28 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+.jumbotron {
+  padding-top: 2rem;
+  height: 100px;
+}
+
+body {
+  background: #343a40;
+}
+
+/* footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+
+footer div h4 {
+  font-size: 1rem;
+}
+footer div button {
+  height: 40px;
+  margin-bottom: 5px;
+}
