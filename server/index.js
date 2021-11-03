@@ -20,8 +20,13 @@ const app = express();
 
 const port = process.env.PORT || 8000;
 app.use(cors());
-app.use("/", getPdfRoute);
+app.use("/pdf", getPdfRoute);
 app.use("/api/", savePatientRoute);
+
+
+if(process.env.NODE_ENV == "production"){
+  app.use(express.static(path.join(__dirname, 'client/build')))
+}
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

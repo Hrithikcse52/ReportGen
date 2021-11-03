@@ -4,6 +4,6 @@ const { getPdf } = require("../controllers/makePdf");
 const { getPatientById } = require("../controllers/patient");
 
 router.param("ptId", getPatientById);
-router.get("/pdf/:ptId", getPdf);
+router.get("/:ptId", getPdf);
 
 module.exports = router;
