@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
+    "heroku-prebuild": "npm i -f",
     "heroku-postbuild": " cd client && npm install && npm run build"
   },
   "keywords": [],
