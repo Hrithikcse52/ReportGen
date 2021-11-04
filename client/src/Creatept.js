@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API } from "./API";
 // import { Link, Redirect } from "react-router-dom";
 import { CreatePatientReport } from "./helper";
 
@@ -73,7 +74,9 @@ const Creatept = () => {
       console.log("out");
       console.log(report);
       setptData({ ...ptData, id: report });
-      window.open(`http://localhost:8000/pdf/${report}`);
+
+
+      window.open(`${API}/pdf/${report}`);
       // window.location.open(`http://localhost:8000/pdf/${report}`);
       // return <Redirect to={`http://localhost:8000/pdf/${report}`} />;
     } catch (error) {

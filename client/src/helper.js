@@ -1,9 +1,12 @@
 // const { API } = require("./API");
 
+import { API } from "./API";
+
 export const CreatePatientReport = async (patient) => {
   console.log(patient);
   try {
-    const res = await fetch("http://localhost:8000/api/savept", {
+    // const res = await fetch("http://localhost:8000/api/savept", {
+      const res = await fetch(`${API}/api/savept`, {
       method: "POST",
       headers: {
         Accept: "application/json",
