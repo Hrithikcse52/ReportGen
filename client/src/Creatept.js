@@ -1,11 +1,12 @@
+
 import React, { useState } from "react";
-import { API } from "./API";
-// import { Link, Redirect } from "react-router-dom";
+// import { API } from "./API";
+
 import { CreatePatientReport } from "./helper";
 
 const Creatept = () => {
-  console.log("enV",process.env.REACT_APP_BACKEND)
-  console.log("enV Port",process.env.PORT)
+  console.log("enV Port",process.env)
+  // console.log("aPI",API)
 
   const [ptData, setptData] = useState({
     name: "",
@@ -78,10 +79,11 @@ const Creatept = () => {
       console.log(report);
       setptData({ ...ptData, id: report });
 
-
-      window.open(`${API}/pdf/${report}`);
+      fetch(`/pdf/${report}`,{method:"GET"})
+      window.open(`http://localhost:5000/pdf/${report}`);
+      // window.open(fetch(`/pdf/${report}`));
       // window.location.open(`http://localhost:8000/pdf/${report}`);
-      // return <Redirect to={`http://localhost:8000/pdf/${report}`} />;
+      // return <Redirect to={`http://localhost:5000/pdf/${report}`} />;
     } catch (error) {
       console.log("error", error);
     }

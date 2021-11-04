@@ -1,12 +1,8 @@
-// const { API } = require("./API");
-
-import { API } from "./API";
-
 export const CreatePatientReport = async (patient) => {
   console.log(patient);
-  console.log("enV",process.env.REACT_APP_BACKEND)
+  console.log("enV",process.env)
   try {
-      const res = await fetch(`${API}/api/savept`, {
+      const res = await fetch(`/api/savept`, {
       method: "POST",
       headers: {
         Accept: "application/json",

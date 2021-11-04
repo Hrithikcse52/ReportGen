@@ -28,6 +28,6 @@ if(process.env.NODE_ENV == "production"){
   app.use(express.static('client/build'))
 }
 
-app.listen(port, () => {
+app.listen(5000, () => {
   console.log(`listening on port ${port}`);
 });

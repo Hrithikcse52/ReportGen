@@ -1,5 +1,4 @@
 import React from "react";
-// import { API } from "./API";
 
 import "./App.css";
 import Base from "./Base";
