@@ -4,8 +4,8 @@ import { API } from "./API";
 
 export const CreatePatientReport = async (patient) => {
   console.log(patient);
+  console.log("enV",process.env.REACT_APP_BACKEND)
   try {
-    // const res = await fetch("http://localhost:8000/api/savept", {
       const res = await fetch(`${API}/api/savept`, {
       method: "POST",
       headers: {

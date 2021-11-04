@@ -4,6 +4,9 @@ import { API } from "./API";
 import { CreatePatientReport } from "./helper";
 
 const Creatept = () => {
+  console.log("enV",process.env.REACT_APP_BACKEND)
+  console.log("enV Port",process.env.PORT)
+
   const [ptData, setptData] = useState({
     name: "",
     ageSex: "",

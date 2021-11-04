@@ -1,1 +1,2 @@
-export const API =  `http://localhost:${process.env.PORT}`;
+require("dotenv").config();
+export const API =  process.env.REACT_APP_BACKEND;
