@@ -28,6 +28,6 @@ app.use("/api/", savePatientRoute);
   app.use(express.static('client/build'))
 // }
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
