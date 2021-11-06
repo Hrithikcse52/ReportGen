@@ -59,7 +59,7 @@ const Creatept = () => {
     // console.log(name);
     const value =
       event.target.type === "file" ? event.target.files[0] : event.target.value;
-    console.log(name, typeof value, value);
+    // console.log(name, typeof value, value);
     formData.set(name, value);
     setptData({ ...ptData, [name]: value });
     // console.log(ptdata);
@@ -81,7 +81,7 @@ const Creatept = () => {
       // window.location.open(`http://localhost:8000/pdf/${report}`);
       // return <Redirect to={`http://localhost:5000/pdf/${report}`} />;
     } catch (error) {
-      console.log("error", error);
+      // console.log("error", error);
     }
     // setptData({ ...ptData });
     // console.log(event.target);

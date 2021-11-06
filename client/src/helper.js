@@ -7,7 +7,7 @@ export const CreatePatientReport = async (patient) => {
       },
       body: patient,
     });
-    console.log("done");
+    // console.log("done");
     return await res.json();
   } catch (err) {
     return console.log(err, "coudnt Process Request");
