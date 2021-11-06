@@ -1,12 +1,9 @@
 
 import React, { useState } from "react";
-import { API } from "./API";
 
 import { CreatePatientReport } from "./helper";
 
 const Creatept = () => {
-  console.log("enV Port",process.env)
-  console.log("aPI",API)
 
   const [ptData, setptData] = useState({
     name: "",
@@ -55,9 +52,7 @@ const Creatept = () => {
     formData,
   } = ptData;
 
-  // useEffect(() => {
-  //   setptData({ ...ptData, formData: new FormData() });
-  // }, []);
+
 
   const handelChange = (event) => {
     const name = event.target.name;
@@ -73,10 +68,10 @@ const Creatept = () => {
   const Submit = async (event) => {
     event.preventDefault();
     try {
-      console.log("in");
+      // console.log("in");
       const report = await CreatePatientReport(formData);
-      console.log("out");
-      console.log(report);
+      // console.log("out");
+      // console.log(report);
       setptData({ ...ptData, id: report });
 
       // fetch(`/pdf/${report}`,{method:"GET"})
@@ -89,7 +84,7 @@ const Creatept = () => {
       console.log("error", error);
     }
     // setptData({ ...ptData });
-    console.log(event.target);
+    // console.log(event.target);
   };
 
   return (

@@ -1,6 +1,4 @@
 export const CreatePatientReport = async (patient) => {
-  console.log(patient);
-  console.log("enV",process.env)
   try {
       const res = await fetch(`/api/savept`, {
       method: "POST",
