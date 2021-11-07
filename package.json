@@ -1,28 +1,28 @@
 {
-  "name": "pdf-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "start:dev": "nodemon index.js",
-    "heroku-prebuild": "npm i -f",
-    "heroku-postbuild": " cd client && npm install && npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "canvas": "^2.6.1",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "formidable": "^1.2.2",
-    "imageurl-base64": "^1.0.0",
-    "mongoose": "^5.10.0",
-    "pdfmake": "^0.1.68"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "name": "pdf-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start:dev": "nodemon index.js",
+        "heroku-prebuild": "npm i -f",
+        "heroku-postbuild": " cd client && npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "canvas": "^2.6.1",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "formidable": "^1.2.2",
+        "imageurl-base64": "^1.0.0",
+        "mongoose": "^5.10.0",
+        "pdfmake": "^0.1.68"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }

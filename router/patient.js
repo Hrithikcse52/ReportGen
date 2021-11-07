@@ -1,22 +1,24 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 const {
-  savePatient,
-  showpts,
-  image,
-  getPatientById,
-  getPatient,
-  incPatientId,
-} = require("../controllers/patient");
+    savePatient,
+    showpts,
+    image,
+    getPatientById,
+    getPatient,
+    incPatientId,
+    savePatient2,
+} = require('../controllers/patient');
 
-router.param("ptId", getPatientById);
+router.param('ptId', getPatientById);
 
-router.get("/showpt/:ptId", getPatient);
+router.get('/showpt/:ptId', getPatient);
 
-router.get("/pt/image/:ptId", image);
+router.get('/pt/image/:ptId', image);
 
-router.post("/savept", savePatient, incPatientId);
+router.post('/savept', savePatient, incPatientId);
+router.post('/savept2', savePatient2);
 
-router.get("/showpts", showpts);
+router.get('/showpts', showpts);
 
 module.exports = router;

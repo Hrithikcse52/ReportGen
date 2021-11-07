@@ -1,15 +1,15 @@
 .btn,
 .jumbotron,
 .nav :hover {
-  border-radius: 0px;
+    border-radius: 0px;
 }
 .jumbotron {
-  padding-top: 2rem;
-  height: 100px;
+    padding-top: 2rem;
+    height: 100px;
 }
 
 body {
-  background: #343a40;
+    background: #343a40;
 }
 
 /* footer {
@@ -20,9 +20,9 @@ body {
 } */
 
 footer div h4 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 footer div button {
-  height: 40px;
-  margin-bottom: 5px;
+    height: 40px;
+    margin-bottom: 5px;
 }
